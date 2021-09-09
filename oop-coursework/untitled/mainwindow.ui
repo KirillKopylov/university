@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1388</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hello World</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelSearch">
+      <property name="text">
+       <string>Пошук за прізвищем</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineSearch"/>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>База даних клієнтів</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTableView" name="tableView"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1388</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="mtbAddCustomer"/>
+   <addaction name="mtbEditCustomer"/>
+   <addaction name="mtbAddMoney"/>
+   <addaction name="mtbRemoveCustomer"/>
+   <addaction name="separator"/>
+   <addaction name="mtbOutputDocuments"/>
+   <addaction name="separator"/>
+   <addaction name="mtbDropTable"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="mtbAddCustomer">
+   <property name="text">
+    <string>Додати</string>
+   </property>
+  </action>
+  <action name="mtbEditCustomer">
+   <property name="text">
+    <string>Редагувати</string>
+   </property>
+  </action>
+  <action name="mtbRemoveCustomer">
+   <property name="text">
+    <string>Видалити</string>
+   </property>
+  </action>
+  <action name="mtbAddMoney">
+   <property name="text">
+    <string>Керування балансом</string>
+   </property>
+  </action>
+  <action name="mtbOutputDocuments">
+   <property name="text">
+    <string>Вихідні документи</string>
+   </property>
+  </action>
+  <action name="mtbDropTable">
+   <property name="text">
+    <string>Очистити таблицю</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
